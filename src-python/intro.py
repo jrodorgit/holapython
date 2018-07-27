@@ -68,3 +68,17 @@ def fibo(n):
  		a, b = b , a+b
 	print()
 
+#llamada a un funcion definida en un fichero fibo.py situado en P:\mypython\fibo.py
+#nos situamos en el lugar donde esta el script py
+import os
+os.getcwd()
+os.chdir(r'P:\mypython')
+os.getcwd()
+
+#importamos el fichero
+import fibo
+
+# declaramos que de ese fichero vamos a utilizar la funcion fibo
+from fibo import fibo
+#ejecutamos la funcion
+fibo()
