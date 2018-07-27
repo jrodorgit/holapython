@@ -29,7 +29,12 @@ while a < 10:
  print(a)
  a, b = b , a+b
 
+#esto es un bucle for
+words = ['gato','perro','canario']
+for w in words:
+ print(w,len(w))
  
+
 #esto es un sentencia de control
 x = int(input("inserta un numero"))
  
