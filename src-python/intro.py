@@ -22,3 +22,9 @@ milista[2:5]
 # esto es una lista de listas milista_c tendra 2 elementos cada uno de ellos a su vez una lista
 milista_b = [0,1,2,3]
 milista_c = [milista,milista_b]
+
+# esto es un bucle while que genera los primeros  elementos de la serie de fibonacci
+a, b = 0,1
+while a < 10:
+ print(a)
+ a, b = b , a+b
