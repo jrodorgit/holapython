@@ -58,3 +58,13 @@ elif x == 1:
  print("single")
 else:
  print("more")
+
+#esto declara una funcion para luego poder ser ejecutada.
+def fibo(n):
+	"""Print fibonacci series up to n """
+	a, b = 0,1
+	while a < 10:
+ 		print(a)
+ 		a, b = b , a+b
+	print()
+
