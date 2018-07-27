@@ -28,3 +28,17 @@ a, b = 0,1
 while a < 10:
  print(a)
  a, b = b , a+b
+
+ 
+#esto es un sentencia de control
+x = int(input("inserta un numero"))
+ 
+if x < 0:
+ x=0
+ print('de negativo a cero')
+elif x == 0:
+ print('cero')
+elif x == 1:
+ print("single")
+else:
+ print("more")
