@@ -35,6 +35,17 @@ for w in words:
  print(w,len(w))
  
 
+#bucle for para generar los numeros primos menores de 10
+# else va asociado el segundo bucle for y se ejecuta siempre  y cuando se salga de este sin pasar por break
+for n in range(2, 10):
+	for x in range(2, n):
+		if n % x == 0:
+			print(n, 'equals', x, '*', n//x)
+			break
+	else:
+		# loop fell through without finding a factor
+		print(n, 'is a prime number')
+  
 #esto es un sentencia de control
 x = int(input("inserta un numero"))
  
