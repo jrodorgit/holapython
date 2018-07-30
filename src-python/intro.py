@@ -59,6 +59,10 @@ elif x == 1:
 else:
  print("more")
 
+# esto es otro sentencia de control
+if ok in ('y', 'ye', 'yes'):
+    return True
+
 #esto declara una funcion para luego poder ser ejecutada.
 def fibo(n):
 	"""Print fibonacci series up to n """
