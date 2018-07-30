@@ -13,6 +13,9 @@ print(r'c:\hola\numero')
 #esto es una lista
 milista = [1,4,9,16,25]
 
+#generacion de lista a partir de expresiones.
+milistatuplacuadrados = [(x, x**2) for x in range(6)]
+
 # esto anade un elemento mas a mi lista
 milista.append(36)
 
