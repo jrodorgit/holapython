@@ -72,6 +72,13 @@ for n in range(2, 10):
 		# loop fell through without finding a factor
 		print(n, 'is a prime number')
   
+# esto es un bucle for con con colecciones a la vez
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+
+
 #esto es un sentencia de control
 x = int(input("inserta un numero"))
  
