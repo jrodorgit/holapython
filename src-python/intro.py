@@ -41,6 +41,14 @@ setdos = set('caca')
 # esto devolvera los elementos que estan en setuno o en setdos pero no los comunes.
 setuno ^ setdos
 
+# esto es un diccionario
+telefonos = {'jack':3455, 'alfred':989}
+#le anado mas numeros de telefono
+telefonos['guido'] = 345
+
+otrodiccionario = dict(sape=4139, guido=4127, jack=4098)
+otromas = {x: x**2 for x in (2, 4, 6)}
+
 # esto es un bucle while que genera los primeros  elementos de la serie de fibonacci
 a, b = 0,1
 while a < 10:
