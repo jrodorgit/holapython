@@ -26,6 +26,10 @@ milista[2:5]
 milista_b = [0,1,2,3]
 milista_c = [milista,milista_b]
 
+#esto es una tupla. es un objeto inmutable.
+tupla = (1,4,5)
+tupla2 = (1,4),(1,8)
+
 # esto es un bucle while que genera los primeros  elementos de la serie de fibonacci
 a, b = 0,1
 while a < 10:
