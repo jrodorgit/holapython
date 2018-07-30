@@ -33,6 +33,14 @@ otratupla = 1,2,3
 #si queremos asignar los valors de la tupla a otras variables podemos...
 x,y,z = otratupla
 
+#esto es un conjunto o set. elemento no repetidos. la a solo estara en el conjunto una vez.
+setuno = {'a','b','c','a'}
+# este conjunto tendra los caracteres c y a
+setdos = set('caca')
+# sobre los conjuntos se pueden hacer operaciones matematicas del tipo
+# esto devolvera los elementos que estan en setuno o en setdos pero no los comunes.
+setuno ^ setdos
+
 # esto es un bucle while que genera los primeros  elementos de la serie de fibonacci
 a, b = 0,1
 while a < 10:
