@@ -119,3 +119,7 @@ import fibo
 from fibo import fibo
 #ejecutamos la funcion
 fibo()
+# si cambiamos una libreria para que se refrequen los cambios...
+import importlib
+importlib.reload(milibreria)
+
