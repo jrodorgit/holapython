@@ -137,3 +137,10 @@ f.close()
 klout2 = [x.replace("\n","") for x in klout]
 klout2 = [float(x) for x in klout2]
 
+# lectura de fichero con formato json
+import json
+with open(r'C:\Users\jrodor5\Desktop\JRODOR\RAM\ram_persona.json', "r",encoding="utf-8") as read_file:
+    persona = json.load(read_file)
+
+read_file.close()
+
