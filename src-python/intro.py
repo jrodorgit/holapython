@@ -123,3 +123,8 @@ fibo()
 import importlib
 importlib.reload(milibreria)
 
+# formateo de cadenas.
+print('{0} and {1}'.format('spam', 'eggs'))
+print('This {food} is {adjective}.'.format(
+    food='spam', adjective='absolutely horrible'))
+
