@@ -128,3 +128,12 @@ print('{0} and {1}'.format('spam', 'eggs'))
 print('This {food} is {adjective}.'.format(
     food='spam', adjective='absolutely horrible'))
 
+#lectura de fichero, limpieza de caracteres y conversion a float
+with open('P:\R-scripts\Klout.csv') as f:
+    klout = list(f)
+
+f.close()
+
+klout2 = [x.replace("\n","") for x in klout]
+klout2 = [float(x) for x in klout2]
+
