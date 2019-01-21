@@ -1,0 +1,32 @@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+def num2Letras(iNum):
+    sDigitosBase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    iBaseSize = len(sDigitosBase)
+    
+    sRet = ""
+    while iNum > 0:
+        iNum = iNum - 1
+        sRet = sDigitosBase[int((iNum % iBaseSize)): int((iNum % iBaseSize) + 1)] + sRet # se extrae el dígito correspondiente de sDigitosBase
+        iNum = int(iNum / iBaseSize)
+
+    return sRet
+
+def letras2Num(sLetras):
+    sDigitosBase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    iBaseSize = len(sDigitosBase)
+    iNum=0
+    for a in range(0,len(sLetras)): #de 0 a la longitud-1, es el exponente de la potencia
+        pos=a*-1-1 #La posición empezando por el final segun python (-1, -2, -3...)
+        iNum= iNum + iBaseSize**a *(sDigitosBase.find(sLetras[pos])+1)
+      
+    return iNum
+
+def main():    
+    for a in range(0,27*27):
+        letra=num2Letras(a)
+        numero=letras2Num(letra)
+        print(str(a) + "\t"+letra+"\t"+str(numero))
+
+    print()
+
+main()
